@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Model</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: url('{{ url_for('static', filename='Background.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .model-selection-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+        .model-selection-container h1 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        .btn {
+            font-size: 1.2rem;
+            padding: 0.8rem 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .description {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="model-selection-container">
+        <h1>Select Model</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <a href="{{ url_for('upload_file', model_type='yolov8n') }}" class="btn btn-primary btn-block">YOLOv8 Model</a>
+                <p class="description">Click here to run the standard YOLOv8 model for object detection on general objects in static images or videos.</p>
+            </div>
+            <div class="col-md-12">
+                <a href="{{ url_for('upload_file', model_type='leaf') }}" class="btn btn-success btn-block">YOLOv8 Fine-Tuned Model</a>
+                <p class="description">Click here to use the fine-tuned YOLOv8 model, specifically trained for detecting and tracking leaf objects with higher accuracy.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
