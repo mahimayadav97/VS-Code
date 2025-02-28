@@ -74,4 +74,3 @@ Wait a few moments as Docker initializes. Once ready, you will see two ports dis
 ### Size Limitations:
 - **Images**: Maximum 5MB
 - **Videos**: Maximum 5MB
-```
