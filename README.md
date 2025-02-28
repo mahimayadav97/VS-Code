@@ -61,9 +61,12 @@ Wait a few moments as Docker initializes. Once ready, you will see two ports dis
 
 ## Overview of the User Interface
 
-- **Model Selection**: Dropdown to choose between YOLOv8n and the fine-tuned model.
+- **Model Selection**: Choose between YOLOv8n and the fine-tuned model
+
 - **File Upload**: Button to browse and upload images/videos.
+- 
 - **Results Display**: Area where processed media with annotations will be displayed.
+- 
 
 ## File Uploading and Processing
 
