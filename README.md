@@ -62,7 +62,7 @@ Wait a few moments as Docker initializes. Once ready, you will see two ports dis
 ## Overview of the User Interface
 
 - **Model Selection**: Choose between YOLOv8n and the fine-tuned model
-![Image](https://github.com/user-attachments/assets/3aac58bb-2ff5-4dde-9136-b5e997e8360e](https://github.com/mahimayadav97/YOLO-object-detection-deployment/blob/main/images/Home%20Page.png)
+![Image](https://github.com/mahimayadav97/YOLO-object-detection-deployment/blob/main/images/Home%20Page.png)
 - **File Upload**: Button to browse and upload images/videos.
 - 
 - **Results Display**: Area where processed media with annotations will be displayed.
